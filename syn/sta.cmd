@@ -3,7 +3,6 @@ read_verilog gcd_gl.v
 link_design gcd
 create_clock -name clk -period 5
 set_input_delay -clock clk 0 {reset a b clk}
-set_output_delay -clock clk 0 {q rdy}
 report_checks
 report_power
 exit
